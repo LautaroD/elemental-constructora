@@ -1,0 +1,95 @@
+@import '../../../styles/assets/fonts/fonts.scss';
+
+.container {
+	max-width: 100%;
+	height: auto;
+	margin: 25px 15px;
+	display: flex;
+	background-color: #fff;
+	position: relative;
+	z-index: 1 !important;
+
+	.titles {
+		width: 100%;
+		padding: 25px 80px 15px 80px;
+		font-family: 'Next Art';
+		font-size: 32px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		:nth-child(2) {
+			font-weight: 800;
+		}
+
+		.subtitle {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 15px;
+		}
+
+		.description {
+			p {
+				font-size: 19px;
+				font-family: 'Maven Pro';
+				margin-top: 10px;
+				height: auto;
+			}
+
+			:nth-child(2) {
+				font-weight: normal;
+			}
+		}
+	}
+
+	.render {
+		width: 50%;
+		overflow: hidden;
+
+		.video {
+			// min-width: 113%;
+			// max-height: 100%;
+			height: fit-content;
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1050px) {
+	.container {
+		display: flex;
+		flex-direction: column-reverse;
+		height: auto;
+
+		.titles {
+			width: 100%;
+			padding: 30px 40px;
+		}
+
+		.render {
+			width: 100%;
+
+			.video {
+				overflow: hidden;
+				object-fit: cover;
+				width: 100%;
+				height: 370px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		margin: 20px 0px;
+
+		.titles {
+			padding: 20px !important;
+		}
+
+		.video {
+			width: 100%;
+			height: 250px !important;
+		}
+	}
+}

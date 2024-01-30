@@ -1,0 +1,79 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+	height: auto;
+	width: 100%;
+	padding: 0px 25px;
+
+	background-color: $background-dark;
+
+	.container {
+		height: auto;
+		width: 100%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 80px;
+
+		position: relative;
+		top: -50px;
+
+		.separador {
+			height: 2px;
+			width: 20%;
+			background-color: $background-second;
+		}
+
+		.video {
+			video {
+				width: 612px;
+				height: 640px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		height: auto;
+		width: 100%;
+		padding: 0px 0px;
+
+		background: linear-gradient(
+			to bottom,
+			$background-dark 50%,
+			$background-grey 50%
+		);
+
+		.container {
+			overflow: hidden;
+			padding-right: 20px;
+			padding-left: 20px;
+
+			height: auto;
+			width: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 0px;
+
+			position: inherit;
+
+			.separador {
+				display: none;
+			}
+
+			.video {
+				overflow: hidden;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				height: 400px;
+				width: 402px;
+			}
+		}
+	}
+}

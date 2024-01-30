@@ -1,0 +1,123 @@
+@import '../../styles/colors.scss';
+
+.wrapper {
+	margin: 0px 25px;
+	max-width: 100%;
+	height: auto;
+	background-color: $background-dark;
+	display: flex;
+
+	&__title {
+		height: auto;
+		background-color: $background-dark;
+		color: $font-grey;
+		padding: 100px 20px 50px 100px;
+		width: 35%;
+
+		:nth-child(1) {
+			font-family: 'Next Art semibold';
+			font-size: 40px;
+		}
+
+		:nth-child(2) {
+			font-family: 'Maven Pro';
+			font-size: 16px;
+		}
+	}
+
+	&__content {
+		background-color: white;
+		width: 65%;
+
+		p {
+			visibility: hidden;
+		}
+	}
+}
+
+.accordion {
+	background-color: $background-dark;
+	margin: 0px 25px;
+	max-width: 100%;
+	display: flex;
+	height: auto;
+}
+
+.accordion-item {
+	width: 35%;
+}
+
+.accordion-item-header {
+	font-size: 14px;
+	font-family: 'Maven Pro';
+	color: $font-grey;
+	cursor: pointer;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	h3 {
+		position: relative;
+		left: 100px;
+	}
+}
+
+.accordion-item-header:hover {
+	background-color: #2b2b2b;
+	color: white;
+}
+
+.accordion__content {
+	width: 65%;
+	background-color: white;
+}
+
+.active {
+	background-color: #2b2b2b;
+	color: white;
+}
+
+.accordion-item-content {
+	padding-top: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	font-family: 'Maven Pro';
+	text-align: justify;
+
+	h3 {
+		font-family: 'Next Art';
+		margin-bottom: 25px;
+		font-size: 26px;
+	}
+}
+
+.bases {
+	margin-top: 25px;
+	display: flex;
+	justify-content: space-around;
+
+	span {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: 12px;
+		gap: 10px;
+		font-weight: 600;
+		color: $font-grey;
+
+		img {
+			width: 192px;
+			height: auto;
+		}
+	}
+}
+
+@media (max-width: 895px) {
+	.wrapper {
+		display: none;
+		visibility: hidden;
+	}
+	.accordion {
+		display: none;
+		visibility: hidden;
+	}
+}

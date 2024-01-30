@@ -1,0 +1,113 @@
+// ..button {
+//     font-family: "Next Art", Sans-serif;
+//     border-style: solid;
+//     border-width: 1px;
+//     border-color: #000;
+//     line-height: 1em;
+//     font-weight: 400;
+//     background-color: #FFF;
+//     box-shadow: 0px 3px 8px 0px rgb(255 255 255 / 25%);
+//     text-align: center;
+//     padding: 10px 15px 10px 15px;
+//     width: 180px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     color: #000;
+//     text-transform: uppercase;
+//     gap: 5px;
+//     font-size: 13px;
+//     cursor: pointer;
+//     height: 45px;
+//     position: relative;
+//     letter-spacing: 1.3px;
+//     overflow: hidden;
+// }
+
+// ..button:hover {
+//     background-color: #000;
+//     color: white;
+// }
+
+// ..button span {
+//     position: relative;
+//     z-index: 10;
+//     transition: color 0.4s;
+// }
+
+// ..button:hover span {
+//     color: white;
+// }
+
+// ..button::before,
+// ..button::after {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     z-index: 0;
+// }
+
+// ..button::before {
+//     content: "";
+//     background: #FFF;
+//     width: 120%;
+//     left: -10%;
+//     transform: skew(30deg);
+//     transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+// }
+
+// ..button:hover::before {
+//     transform: translate3d(100%, 0, 0);
+// }
+
+.button {
+    cursor: pointer;
+    border: 1px solid black;
+    margin: 0;
+    width: 183px;
+    height: 45px;
+    font-family: 'Next Art';
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    overflow: hidden;
+    background: black;
+    color: black;
+}
+
+.button span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.button:hover span {
+    color: white;
+}
+
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.button::before {
+    content: "";
+    background: #FFF;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.button:hover::before {
+    transform: translate3d(100%, 0, 0);
+}

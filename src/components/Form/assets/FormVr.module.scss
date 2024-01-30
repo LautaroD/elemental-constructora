@@ -1,0 +1,281 @@
+.wrapper {
+	margin: 25px 15px;
+	max-width: 100%;
+	display: flex;
+	height: auto;
+	gap: 20px;
+
+	.column1 {
+		height: 100%;
+		width: 50%;
+
+		background: url(../../../styles/assets/contacto_elemental.jpg) no-repeat
+			center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.column2 {
+		height: auto;
+		width: 60%;
+		background-color: white;
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+
+		p {
+			// font-family: 'Next Art semibold';
+			font-family: var(--font-neue);
+
+			font-size: 45px;
+		}
+
+		p:nth-child(2) {
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+			font-size: 16px;
+			width: 80%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			font-family: 'Maven Pro', sans-serif;
+			font-size: 16px;
+			max-height: 100%;
+			overflow: hidden;
+
+			input {
+				padding-left: 15px;
+				background-color: #e8e8e8;
+				width: 100%;
+				border: none;
+				height: 40px;
+				margin-bottom: 15px;
+			}
+
+			button {
+				font-family: 'Next Art', Sans-serif;
+				border-style: solid;
+				border-width: 1px;
+				border-color: #000;
+				line-height: 1em;
+				font-weight: 400;
+				background-color: #000;
+				box-shadow: 0px 3px 8px 0px rgb(255 255 255 / 25%);
+				text-align: center;
+				padding: 10px 15px 10px 15px;
+				width: 90%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				text-transform: uppercase;
+				gap: 5px;
+				font-size: 16px;
+				cursor: pointer;
+				height: 45px;
+			}
+
+			button:hover {
+				background-color: #fff;
+				color: black;
+				border-color: black;
+			}
+
+			.fmensaje {
+				resize: none;
+				width: 90%;
+				height: 160px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				background-color: #e8e8e8;
+				border-style: none;
+			}
+
+			.btnFalse {
+				font-family: 'Next Art', Sans-serif;
+				border-style: solid;
+				border-width: 1px;
+				border-color: #000;
+				line-height: 1em;
+				font-weight: 400;
+				opacity: 0.5;
+				background-color: #000;
+				box-shadow: 0px 3px 8px 0px rgb(255 255 255 / 25%);
+				text-align: center;
+				padding: 10px 15px 10px 15px;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				color: white;
+				text-transform: uppercase;
+				gap: 5px;
+				font-size: 16px;
+				height: 45px;
+			}
+
+			.containerError {
+				position: relative;
+				height: 0;
+
+				&__error {
+					color: red;
+					position: absolute;
+					top: -16px;
+					margin-top: 0px;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+			}
+
+			&__subForm {
+				display: flex;
+
+				span {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+
+					input {
+						width: 99%;
+					}
+				}
+			}
+		}
+	}
+
+	.swiperVr {
+		width: 40%;
+		height: 50%;
+	}
+}
+
+@media (max-width: 1366px) {
+	.wrapper {
+		.column2 {
+			width: 50%;
+		}
+
+		.swiperVr {
+			width: 50%;
+			height: 50%;
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.wrapper {
+		flex-direction: column;
+		height: auto;
+		max-width: 100%;
+
+		.column2 {
+			justify-content: space-around;
+			width: 100%;
+
+			.form {
+				input {
+					width: 100%;
+				}
+
+				button {
+					width: 100%;
+				}
+
+				.fmensaje {
+					width: 100%;
+				}
+			}
+		}
+
+		.swiperVr {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.wrapper {
+		margin: 0;
+
+		.column2 {
+			padding: 20px;
+
+			p:nth-child(2) {
+				width: 100%;
+				margin-top: 0px;
+				margin-bottom: 0px;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.wrapper {
+		height: auto;
+		margin: 20px 0px;
+		gap: 0;
+
+		.column1 {
+			height: 250px;
+			width: 100%;
+
+			background: url(../../../styles/assets/contacto_elemental.jpg) no-repeat
+				center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		.column2 {
+			width: 100%;
+			height: auto;
+
+			p:nth-child(2) {
+				width: 100%;
+				margin-top: 0px;
+				margin-bottom: 20px;
+			}
+
+			.form {
+				div {
+					span {
+						width: 100%;
+					}
+				}
+
+				&__subForm {
+					flex-direction: column;
+
+					span {
+						input {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+
+		.swiperVr {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	.wrapper {
+		.column2 {
+			p:nth-child(1) {
+				font-size: 26px;
+			}
+		}
+	}
+}

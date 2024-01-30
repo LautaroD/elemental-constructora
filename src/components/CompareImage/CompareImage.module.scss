@@ -1,0 +1,39 @@
+.compareImage {
+	max-width: 100%;
+
+	&__title {
+		background-color: white;
+		padding: 3.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		p {
+			font-family: 'Next Art semibold';
+			font-size: 30px;
+		}
+
+		p:nth-child(2) {
+			font-family: 'Maven Pro';
+			font-size: 16px;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.compareImage__title {
+		justify-content: center;
+		gap: 15px;
+		flex-direction: column;
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.compareImage__title {
+		padding: 20px;
+		p {
+			font-size: 25px;
+		}
+	}
+}

@@ -1,0 +1,101 @@
+.wrapper {
+
+    background-image: url(../../../styles/assets/images/heroLineaDesign.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    margin: 25px 15px;
+    height: 50vh;
+
+    &__bg {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(90deg, #000000 10%, #FFFFFF00 100%);
+    }
+
+    .container {
+
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 100px;
+
+        p {
+            font-family: 'Next Art';
+            font-size: 40px;
+            color: white;
+
+            span {
+                font-weight: 800;
+            }
+
+        }
+
+        :nth-child(2) {
+            margin-top: 40px;
+            width: 27%;
+            font-family: 'Maven Pro';
+            font-size: 20px;
+        }
+
+    }
+}
+
+@media (max-width: 1025px) {
+    
+    .wrapper {
+        height: 30vh;
+
+        .container {
+
+            p {
+                font-size: 30px;
+            }
+
+            :nth-child(2) {
+                margin-top: 40px;
+                width: 60%;
+                font-family: 'Maven Pro';
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    
+    .wrapper {
+        margin: 0px;
+        margin-top: 20px;
+
+        .container {
+
+            p {
+                font-size: 25px;
+            }
+
+            :nth-child(2) {
+                margin-top: 20px;
+                width: 80%;
+                font-family: 'Maven Pro';
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .wrapper {
+        height: 25vh;
+
+        .container {
+            margin-left: 40px;
+        }
+
+    }
+
+}

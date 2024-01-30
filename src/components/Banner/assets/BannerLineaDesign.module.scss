@@ -1,0 +1,89 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+    max-width: 100%;
+    height: 180px;
+    margin: 25px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-third;
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 25px;
+            color: white;
+            font-family: 'Next Art';
+
+            span {
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1180px) {
+    
+    .wrapper {
+
+        .container {
+            width: 100%;
+
+            p {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 916px) {
+    
+    .wrapper {
+
+        .container {
+            width: 100%;
+
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    
+    .wrapper {
+        margin: 0px;
+        margin-top: 25px;
+
+        .container {
+            width: 100%;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    
+    .wrapper {
+
+        .container {
+            width: 80%;
+            text-align: center;
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+}

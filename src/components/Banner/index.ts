@@ -1,0 +1,13 @@
+export { default as BannerPlanE } from './BannerPlanE';
+export { default as BannerContact } from './BannerContact';
+export { default as BannerQuinchos } from './BannerQuinchos';
+export { default as BannerElementos } from './BannerElementos';
+export { default as VideoBannerPlane } from './VideoBannerPlane';
+export { default as BannerLineaDesign } from './BannerLineaDesign';
+export { default as BannerLineaModular } from './BannerLineaModular';
+export { default as BannerBlackAnimado } from './BannerBlackAnimado';
+export { default as BannerPasosElementos } from './BannerPasosElementos';
+export { default as BannerLineaTradicional } from './BannerLineaTradicional';
+export { default as FrecuentQuestionsPlane } from './FrecuentQuestionsPlane';
+export { default as BannerDescagarElementos } from './BannerDescagarElementos';
+export { default as BannerElementosCategorias } from './BannerElementosCategorias';

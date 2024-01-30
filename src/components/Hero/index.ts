@@ -1,0 +1,10 @@
+export { default as FirstSection } from './FirstSection';
+export { default as HeroNostros } from './HeroNostros';
+export { default as Elegirnos } from './Elegirnos';
+export { default as HeroVr } from './HeroVr';
+export { default as HeroPlanE } from './HeroPlanE';
+export { default as HeroLineaTradicional } from './HeroLineaTradicional';
+export { default as ModelosLineaTradicional } from './ModelosLineaTradicional';
+export { default as LinkDesign } from './LinkDesign';
+export { default as HeroElementos } from './HeroElementos';
+export { default as HomeElementos } from './HomeElementos';

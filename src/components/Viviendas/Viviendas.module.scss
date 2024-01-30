@@ -1,0 +1,84 @@
+@import '../../styles/colors.scss';
+@import '../../styles/assets/fonts/fonts.scss';
+
+.container {
+	display: flex;
+	height: auto;
+	width: 100%;
+	padding: 15px 15px;
+
+	.title {
+		width: 34%;
+		background-color: $background-third;
+		padding: 4em 5em 4em 5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		p {
+			// font-family: 'Next Art', 'sans-serif';
+			font-family: var(--font-neue);
+			font-size: 40px;
+			color: white;
+		}
+
+		:nth-child(2) {
+			// font-family: 'Next Art semibold';
+			font-family: var(--font-neue);
+			font-weight: 600;
+		}
+
+		:nth-child(3) {
+			margin-top: 18px;
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+			font-size: 16px;
+			text-transform: none;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.slides {
+		width: 66%;
+	}
+}
+
+@media (max-width: 1100px) {
+	.container {
+		.title {
+			padding: 4em 3em 4em 3em;
+
+			p {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 800px) {
+	.container {
+		padding: 0;
+		flex-direction: column;
+		margin-top: 15px;
+
+		.title {
+			width: 100%;
+		}
+
+		.slides {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.container {
+		padding: 5px;
+
+		.title {
+			align-items: center;
+			text-align: center;
+			padding: 2.5em;
+		}
+	}
+}

@@ -1,0 +1,132 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+	margin: 25px 15px;
+	display: flex;
+	max-width: 100%;
+	height: 80vh;
+	background-color: white;
+
+	.container1 {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 40px 140px 20px 140px;
+
+		p {
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+
+			font-weight: 800;
+			text-align: justify;
+			font-size: 51px;
+		}
+
+		p:nth-child(2) {
+			font-size: 40px;
+			font-weight: 600;
+		}
+
+		p:nth-child(3) {
+			margin-top: 7px;
+			font-size: 16px;
+			font-weight: normal;
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+		}
+		p:nth-child(4) {
+			display: none;
+		}
+	}
+
+	.container2 {
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+
+		img {
+			height: auto;
+			position: relative;
+			right: 150px;
+		}
+
+		background-color: $background-dark;
+		width: 50%;
+	}
+}
+
+@media (max-width: 1400px) {
+	.wrapper {
+		.container2 {
+			img {
+				height: 100%;
+				width: auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 1025px) {
+	.wrapper {
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+		margin: 0;
+
+		.container1 {
+			width: 100%;
+			padding: 30px;
+		}
+
+		.container2 {
+			width: 100%;
+			background-color: transparent;
+			justify-content: center;
+
+			img {
+				height: auto;
+				width: 100%;
+				left: inherit;
+				right: inherit;
+			}
+		}
+	}
+}
+
+@media (max-width: 630px) {
+	.container1 {
+		p:nth-child(2) {
+			font-size: 25px !important;
+			font-weight: 600;
+		}
+
+		p:nth-child(3) {
+			display: none;
+		}
+		p:nth-child(4) {
+			display: unset !important;
+			margin-top: 7px;
+			font-size: 16px;
+			font-weight: normal;
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+		}
+	}
+}
+
+@media (max-width: 460px) {
+	.container1 {
+		p:nth-child(1) {
+			font-size: 35px !important;
+		}
+
+		p:nth-child(2) {
+			font-size: 20px !important;
+		}
+	}
+
+	.container2 {
+		background: linear-gradient(to bottom, white 50%, $background-dark 50%);
+	}
+}

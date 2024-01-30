@@ -1,0 +1,36 @@
+@import '../../../styles/colors.scss';
+
+.banner {
+	margin: 15px 15px 0px 15px;
+
+	max-width: 100%;
+	height: 170px;
+	background-color: #606060;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-family: var(--font-mavenpro);
+	text-transform: uppercase;
+	color: white;
+	// font-size: 25px;
+	font-size: 1.4vw;
+}
+
+@media (max-width: 710px) {
+	.banner {
+		margin: 15px 15px 0px 15px;
+		height: 170px;
+		font-size: 20px;
+
+		text-align: center;
+	}
+}
+
+@media (max-width: 500px) {
+	.banner {
+		height: 90px;
+		font-size: 4vw;
+	}
+}

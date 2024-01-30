@@ -1,0 +1,256 @@
+@import '../styles/colors.scss';
+@import '../styles/assets/fonts/fonts.scss';
+
+.banner {
+	height: 170px;
+	background-color: #1a1a1a;
+	margin: 25px 15px;
+	margin-bottom: 5px;
+	margin-top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+	h1,
+	h2 {
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 100;
+		color: white;
+		// font-family: 'Maven Pro';
+		font-family: var(--font-mavenpro);
+	}
+}
+
+.sectionInfo {
+	display: flex;
+	height: 30vh;
+	max-width: 100%;
+	gap: 20px;
+	justify-content: center;
+	margin: 25px 15px;
+
+	.miniBanner {
+		background-color: #1a1a1a;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		padding-left: 100px;
+		padding-right: 100px;
+		gap: 20px;
+
+		p {
+			color: white;
+			font-size: 19px;
+			// font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+		}
+	}
+}
+
+@media (max-width: 1100px) {
+	.banner {
+		height: auto;
+		padding: 20px;
+
+		h1,
+		h2 {
+			font-size: 20px !important;
+		}
+	}
+
+	.sectionInfo {
+		height: auto;
+		.miniBanner {
+			padding: 40px;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.banner {
+		button {
+			display: none;
+		}
+	}
+
+	.sectionInfo {
+		.miniBanner {
+			padding: 30px;
+
+			img {
+				height: 24px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 700px) {
+	.banner {
+		margin: 0;
+		margin-top: 20px;
+
+		img {
+			height: 24px;
+			width: auto;
+		}
+
+		h1,
+		h2 {
+			font-size: 15px !important;
+		}
+	}
+
+	.sectionInfo {
+		flex-direction: column;
+		margin: 0;
+		margin-top: 10px;
+
+		.miniBanner {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			img {
+				min-width: 20%;
+				height: 24px;
+			}
+
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (max-width: 580px) {
+	.banner {
+		text-align: center;
+		gap: 0px;
+
+		img {
+			display: none;
+			visibility: hidden;
+		}
+
+		h1,
+		h2 {
+			padding-top: 15px;
+			padding-bottom: 15px;
+			font-size: 15px !important;
+		}
+	}
+
+	.sectionInfo {
+		gap: 15px;
+		margin-bottom: 15px;
+
+		.miniBanner {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 25px;
+
+			img {
+				min-width: 20%;
+				height: 24px;
+			}
+
+			p {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes banner {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(3000px, 0, 0);
+		transform: translate3d(3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(-25px, 0, 0);
+		transform: translate3d(-25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(-5px, 0, 0);
+		transform: translate3d(-5px, 0, 0);
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes banner {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(3000px, 0, 0);
+		transform: translate3d(3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(-25px, 0, 0);
+		transform: translate3d(-25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(10px, 0, 0);
+		transform: translate3d(10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(-5px, 0, 0);
+		transform: translate3d(-5px, 0, 0);
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.banner {
+	-webkit-animation-name: banner;
+	animation-name: banner;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}

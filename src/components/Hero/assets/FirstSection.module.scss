@@ -1,0 +1,496 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/assets/fonts/fonts.scss';
+
+@keyframes floater {
+	0% {
+		transform: translateY(-10%);
+		transition: ease 0.5s;
+	}
+	50% {
+		transform: translateY(10%);
+		transition: ease 0.5s;
+	}
+}
+
+.container {
+	display: flex;
+	width: 100%;
+	height: auto;
+	padding: 25px 15px;
+
+	.socialMedias {
+		background-color: #131316;
+		width: 5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 17px;
+		cursor: pointer;
+
+		.image {
+			transition: 0.2s linear;
+		}
+
+		.image:hover {
+			height: 24px;
+			transition: 0.2s linear;
+		}
+	}
+
+	.version_desktop,
+	.version_mobile {
+		display: flex;
+		width: 100%;
+		height: auto;
+
+		.titles {
+			background-color: #fff;
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			padding: 30px;
+
+			p {
+				font-size: 40px;
+				text-transform: uppercase;
+				// font-family: 'Maven Pro', 'sans-serif';
+				font-family: var(--font-mavenpro);
+			}
+
+			:nth-child(2) {
+				font-weight: 600;
+			}
+
+			:nth-child(3) {
+				font-size: 18px;
+				text-transform: none;
+				margin-bottom: 15px;
+				margin-top: 15px;
+			}
+
+			:nth-child(5) {
+				align-self: flex-start;
+				font-size: 26px;
+				text-transform: none;
+				margin-top: 15px;
+				font-weight: 700;
+			}
+
+			:nth-child(6) {
+				align-self: flex-start;
+				font-size: 22px;
+				text-transform: none;
+			}
+
+			&__cascosVr {
+				padding-top: 30px;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				align-items: center;
+				height: 170px;
+
+				button {
+					// font-family: 'Next Art semibold';
+					font-family: var(--font-neue);
+					align-self: flex-start;
+					border: 1px solid black;
+					font-size: 22px;
+					width: 120px;
+					display: flex;
+					align-items: center;
+					gap: 15px;
+					cursor: pointer;
+					background-color: white;
+					transition: ease 0.5s;
+
+					span {
+						padding: 3px 8px;
+						height: 100%;
+						align-self: flex-start;
+						background-color: #131316;
+						color: white;
+						font-size: 30px;
+						font-family: 'Next Art light';
+					}
+				}
+				button:hover {
+					transform: translateX(10%);
+				}
+
+				img {
+					max-width: 100%;
+					height: auto;
+					transform: translateY(-10%);
+					animation: floater 5.5s infinite;
+					transition: ease 0.5s;
+				}
+
+				img:nth-child(3) {
+					position: relative;
+					top: -40px;
+				}
+			}
+			.divisor {
+				border-top: 1.3px solid #000;
+				width: 100%;
+				margin-top: 15px;
+			}
+		}
+
+		.render {
+			background-color: #fff;
+			width: 100%;
+
+			video {
+				height: 100%;
+				max-width: 100%;
+			}
+		}
+	}
+
+	.version_mobile {
+		display: none;
+	}
+}
+
+@media (max-width: 1441px) {
+	.container {
+		.version_desktop,
+		.version_mobile {
+			.titles {
+				width: 40%;
+				padding: 20px;
+
+				p {
+					font-size: 35px;
+				}
+
+				&__cascosVr {
+					height: 150px;
+
+					button {
+						height: 30px;
+
+						span {
+							padding: 0px 8px !important;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+						}
+					}
+
+					img {
+						height: 100px;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.container {
+		.version_desktop,
+		.version_mobile {
+			.titles {
+				padding: 10px !important;
+
+				&__cascosVr {
+					height: 190px;
+
+					button {
+						height: 20px;
+						font-size: 14px;
+						width: 100px;
+
+						span {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1300px) {
+	.container {
+		.version_desktop,
+		.version_mobile {
+			.titles {
+				p {
+					font-size: 30px;
+				}
+
+				&__cascosVr {
+					height: 190px;
+
+					button {
+						height: 20px;
+						font-size: 14px;
+						width: 100px;
+
+						span {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1160px) {
+	.container {
+		.socialMedias {
+			gap: 20px;
+
+			img {
+				height: 20px;
+			}
+		}
+
+		.version_desktop,
+		.version_mobile {
+			.titles {
+				p {
+					font-size: 20px;
+				}
+
+				:nth-child(3) {
+					font-size: 16px;
+				}
+
+				:nth-child(5) {
+					font-size: 20px;
+				}
+
+				:nth-child(6) {
+					font-size: 16px;
+				}
+
+				&__cascosVr {
+					height: 190px;
+
+					button {
+						height: 20px;
+						font-size: 14px;
+						width: 100px;
+
+						span {
+							font-size: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1025px) {
+	.container {
+		.socialMedias {
+			.image {
+				height: 20px;
+			}
+		}
+
+		.version_desktop,
+		.version_mobile {
+			.titles {
+				padding: 10px;
+
+				p {
+					font-size: 25px;
+				}
+
+				:nth-child(3) {
+					font-size: 14px;
+				}
+
+				:nth-child(5) {
+					font-size: 20px;
+				}
+
+				:nth-child(6) {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.container {
+		padding: 0px;
+
+		.version_desktop {
+			display: none;
+		}
+
+		.socialMedias {
+			width: 100%;
+			flex-direction: row;
+			padding: 15px;
+
+			display: none;
+		}
+
+		.version_mobile {
+			display: unset;
+
+			.titles {
+				padding: 40px !important;
+				width: 100%;
+
+				:nth-child(3) {
+					font-size: 18px;
+				}
+			}
+
+			.render {
+				width: 100%;
+			}
+
+			.titles__cascosVr {
+				background-color: white;
+				padding: 20px;
+				justify-content: space-evenly;
+				flex-direction: row;
+				height: auto;
+
+				div {
+					width: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					align-content: center;
+
+					p {
+						// font-family: 'Maven Pro';
+						font-family: var(--font-mavenpro);
+						font-weight: 800;
+						font-size: 20px;
+
+						width: 100%;
+						text-align: left;
+					}
+
+					p:nth-child(2) {
+						margin-top: 10px;
+						font-weight: inherit;
+					}
+
+					// .headset_vr {
+					img {
+						position: relative;
+						width: 32vw;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 590px) {
+	.titles__cascosVr {
+		div {
+			p {
+				font-size: 15px !important;
+			}
+		}
+	}
+}
+
+@-webkit-keyframes container {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes container {
+	from,
+	60%,
+	75%,
+	90%,
+	to {
+		-webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+		animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	}
+
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(-3000px, 0, 0);
+		transform: translate3d(-3000px, 0, 0);
+	}
+
+	60% {
+		opacity: 1;
+		-webkit-transform: translate3d(25px, 0, 0);
+		transform: translate3d(25px, 0, 0);
+	}
+
+	75% {
+		-webkit-transform: translate3d(-10px, 0, 0);
+		transform: translate3d(-10px, 0, 0);
+	}
+
+	90% {
+		-webkit-transform: translate3d(5px, 0, 0);
+		transform: translate3d(5px, 0, 0);
+	}
+
+	to {
+		-webkit-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.container {
+	-webkit-animation-name: container;
+	animation-name: container;
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}

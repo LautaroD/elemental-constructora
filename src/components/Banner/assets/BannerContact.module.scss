@@ -1,0 +1,61 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+    max-width: 100%;
+    margin: 25px 15px;
+    height: 15vh;
+    display: flex;
+    gap: 20px;
+
+    div {
+        width: 25%;
+        background-color: $background-third;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Maven Pro';
+        font-size: 15px;
+        color: #f8f9fa;
+
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            height: 100%;
+        }
+    }
+}
+
+@media (max-width: 1331px) {
+    .wrapper {
+        flex-wrap: wrap;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        div {
+            height: 100px;
+            width: 49%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        margin: 0;
+        margin-bottom: 20px;
+
+        div {
+            height: 100px;
+            width: 100%;
+        }
+    }
+}

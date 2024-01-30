@@ -1,0 +1,17 @@
+.container {
+    max-width: 100%;
+    height: 100%;
+    margin: 25px 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+
+    .quincho {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        background-color: #FFF;
+        width: 50%;
+    }
+}

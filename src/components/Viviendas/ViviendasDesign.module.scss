@@ -1,0 +1,99 @@
+@import '../../styles/colors.scss';
+@import '../../styles/assets/fonts/fonts.scss';
+
+.container {
+	display: flex;
+	height: auto;
+	width: 100%;
+	padding: 15px 15px;
+
+	.title {
+		width: 34%;
+		background-color: white;
+		padding: 4em 5em 4em 5em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		p {
+			// font-family: 'Next Art', 'sans-serif';
+			font-family: var(--font-neue);
+			font-size: 35px;
+			color: black;
+		}
+
+		:nth-child(2) {
+			// font-family: 'Next Art semibold';
+			font-family: var(--font-neue);
+			font-weight: 600;
+		}
+
+		:nth-child(3) {
+			margin-top: 18px;
+			font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+			font-size: 16px;
+			text-transform: none;
+		}
+
+		:nth-child(4) {
+			margin-top: 18px;
+			font-family: 'Maven Pro';
+			font-family: var(--font-mavenpro);
+			font-size: 16px;
+			text-transform: none;
+			margin-bottom: 4rem;
+		}
+	}
+
+	.slides {
+		width: 66%;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		.title {
+			width: 40%;
+			padding: 2.5em 3.5em 2.5em 3.5em;
+		}
+
+		.slides {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.container {
+		flex-direction: column-reverse;
+
+		.title {
+			width: 100%;
+		}
+
+		.slides {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.container {
+		padding: 0;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.container {
+		.title {
+			padding: 2em;
+
+			p {
+				font-size: 25px;
+				text-align: justify;
+			}
+		}
+	}
+}

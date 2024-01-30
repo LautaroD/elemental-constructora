@@ -1,0 +1,134 @@
+@import '../../../styles/colors.scss';
+
+.wrapperVideo {
+	max-width: 100%;
+	height: auto;
+	margin: 25px 15px;
+	display: flex;
+	background-color: $background-dark;
+
+	&__titles {
+		width: 34%;
+		color: white;
+		font-family: 'Next Art';
+		padding: 60px;
+		font-size: 35px;
+		height: auto;
+
+		&__subtitle {
+			font-weight: 800;
+		}
+
+		span {
+			p {
+				margin-top: 20px;
+				font-size: 15px;
+				font-family: 'Maven Pro';
+				text-align: justify;
+			}
+		}
+
+		&__number {
+			font-family: 'Next Art';
+			border-bottom: 4px solid;
+			font-weight: 800;
+			width: fit-content;
+			font-size: 40px;
+			color: $font-grey;
+			margin-top: 40px;
+		}
+	}
+
+	div {
+		video {
+			object-fit: cover;
+			height: 100%;
+			max-width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1400px) {
+	.wrapperVideo {
+		height: 60vh;
+
+		&__titles {
+			font-size: 23px;
+			height: auto;
+			padding: 40px;
+
+			span {
+				p {
+					margin-top: 20px;
+					font-size: 13px;
+					font-family: 'Maven Pro';
+					text-align: justify;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 1230px) {
+	.wrapperVideo {
+		flex-direction: column-reverse;
+		height: auto;
+
+		&__titles {
+			font-size: 30px;
+			height: auto;
+			padding: 40px;
+			width: 100%;
+
+			span {
+				p {
+					font-size: 18px;
+				}
+			}
+
+			&__number {
+				font-size: 30px;
+			}
+		}
+
+		div {
+			overflow: hidden;
+			video {
+				object-fit: cover;
+				min-width: 100%;
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.wrapperVideo {
+		margin: 0;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapperVideo {
+		flex-direction: column-reverse;
+		height: auto;
+
+		&__titles {
+			font-size: 20px;
+			height: auto;
+			padding: 40px;
+			width: 100%;
+
+			span {
+				p {
+					font-size: 12px;
+				}
+			}
+
+			&__number {
+				font-size: 20px;
+			}
+		}
+	}
+}

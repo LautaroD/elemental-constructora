@@ -1,0 +1,331 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+	height: auto;
+	max-width: 100%;
+	margin: 0px 15px;
+
+	&__section1 {
+		background: linear-gradient(to bottom, white 35%, $background-dark 35%);
+		padding: 40px;
+
+		p {
+			// font-family: 'Next Art';
+			font-family: var(--font-neue);
+			font-size: 30px;
+			padding: 2em;
+
+			span {
+				font-weight: 800;
+			}
+		}
+
+		&__images {
+			display: flex;
+			gap: 10px;
+
+			&__wrapper {
+				width: 100%;
+
+				display: flex;
+				flex-direction: column;
+				gap: 75px;
+
+				div {
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+
+					img {
+						width: 100%;
+					}
+
+					span {
+						margin-top: 15px;
+					}
+
+					.last_slide {
+						height: 100%;
+						width: 100%;
+
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						align-content: center;
+
+						background-color: #d9d9d9;
+
+						span {
+							display: flex;
+							width: 100%;
+							height: 100%;
+							margin-top: 0px;
+
+							span {
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								align-items: center;
+								gap: 10px;
+
+								img {
+									height: 40px !important;
+								}
+
+								p {
+									// font-family: 'Maven Pro';
+									font-family: var(--font-mavenpro);
+
+									margin: 0;
+									padding: 0;
+									font-size: 24px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.copyright {
+	display: none;
+}
+
+.howTo {
+	margin: 0px 15px 25px 15px;
+	height: 80vh;
+	background-color: $background-dark;
+
+	&__title {
+		// font-family: 'Next Art';
+		font-family: var(--font-neue);
+		font-size: 30px;
+		padding: 3em;
+		color: white;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		gap: 15px;
+		padding: 3em;
+		padding-left: 5em;
+		padding-right: 5em;
+
+		.arrow {
+			font-size: 30px;
+			color: white;
+			// font-family: 'Nex Art bold';
+			font-family: var(--font-neue);
+			font-weight: bold;
+		}
+	}
+
+	.buttonInteresado {
+		width: 100%;
+		display: flex;
+		padding-right: 80px;
+		justify-content: flex-end;
+	}
+}
+
+.containerCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding: 45px;
+	height: 200px;
+	width: 200px;
+	background-color: #2b2b2b;
+
+	p {
+		// font-family: 'Maven Pro';
+		font-family: var(--font-mavenpro);
+		font-size: 11.2px;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+@media (max-width: 1616px) {
+	.wrapper__section1__images {
+		padding: 0;
+	}
+}
+
+@media (max-width: 1510px) {
+	.howTo__content {
+		gap: 10px;
+	}
+
+	.containerCard {
+		height: 150px;
+		width: 200px;
+	}
+
+	.lastBox {
+		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 1440px) {
+	.howTo__content {
+		gap: 5px;
+	}
+
+	.containerCard {
+		padding: 35px;
+	}
+}
+
+@media (max-width: 1180px) {
+	.howTo__content {
+		gap: 5px;
+	}
+
+	.containerCard {
+		padding: 10px;
+	}
+}
+@media (max-width: 1024px) {
+	.wrapper {
+		&__section1 {
+			background: linear-gradient(
+				to bottom,
+				white 22%,
+				$background-dark 22%
+			) !important;
+			&__images {
+				flex-direction: column;
+			}
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.wrapper {
+		margin: 0;
+		margin-top: 20px;
+
+		&__section1 {
+			p {
+				font-size: 25px;
+				padding: 2em 2em 2em 0em;
+			}
+		}
+	}
+
+	.howTo {
+		height: auto;
+		margin: 0;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.howTo__title {
+		font-size: 25px;
+		padding: 2em 2em 2em 2em;
+	}
+
+	.howTo__content {
+		flex-direction: column;
+	}
+
+	.arrow {
+		transform: rotate(90deg);
+	}
+
+	.containerCard {
+		width: 90%;
+		padding: 10px;
+	}
+
+	.lastBox {
+		font-size: 16px !important;
+		text-align: center !important;
+	}
+
+	.buttonInteresado {
+		display: none !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.wrapper {
+		&__section1 {
+			padding: 20px;
+
+			p {
+				font-size: 25px;
+				padding: 2em 2em 2em 0em;
+			}
+
+			&__images {
+				&__wrapper {
+					gap: 0px;
+
+					div {
+						span {
+							margin-bottom: 75px;
+						}
+
+						.last_slide {
+							span {
+								position: relative;
+								height: 0px;
+								width: 100%;
+
+								display: flex;
+								align-items: center;
+
+								span {
+									gap: 3px;
+									margin-top: 150px;
+
+									img {
+										height: 25px !important;
+									}
+
+									p {
+										margin: 0;
+										padding: 0;
+										font-size: 12px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.howTo__title {
+			font-size: 20px;
+			align-items: center;
+			text-align: center;
+		}
+	}
+
+	.copyright {
+		padding: 0 !important;
+		margin: 0 !important;
+		display: flex;
+		width: 100%;
+		text-align: center !important;
+		justify-content: center !important;
+		align-items: center !important;
+		align-content: center !important;
+		color: white;
+		font-size: 10px !important;
+		// font-family: 'Maven Pro' !important;
+		font-family: var(--font-mavenpro) !important;
+	}
+}

@@ -1,0 +1,178 @@
+@import '../../styles/colors.scss';
+
+.container {
+	background-color: $background-dark;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: auto;
+	// font-family: 'Maven Pro';
+	font-family: var(--font-mavenpro);
+	color: white;
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 100px;
+
+	.titles {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+	}
+
+	.viviendas {
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+
+		.subTitle {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
+
+		.socialMedias {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 25px;
+		}
+
+		span {
+			display: none;
+		}
+	}
+
+	.info {
+		display: flex;
+		gap: 150px;
+	}
+}
+
+.containerFooter {
+	height: 10vh;
+	padding-left: 40px;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 100%;
+	font-family: 'Maven Pro';
+	font-family: var(--font-mavenpro);
+	color: $font-grey;
+	font-size: 14px;
+
+	div {
+		display: flex;
+		align-items: center;
+		gap: 45px;
+	}
+
+	.btnGoUp {
+		border-radius: 50%;
+		position: relative;
+		bottom: 0px;
+		right: 100px;
+		cursor: pointer;
+
+		img {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+@media (max-width: 1240px) {
+	.container {
+		font-size: 11px;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		height: 40vh;
+		padding: 0;
+		width: 100%;
+
+		.info {
+			gap: 0px;
+			display: flex;
+			width: 50%;
+			justify-content: space-around;
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.container {
+		font-size: 11px;
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+@media (max-width: 670px) {
+	.container {
+		font-size: 12px;
+		justify-content: center;
+		padding: 0;
+	}
+}
+
+@media (max-width: 665px) {
+	.container {
+		flex-direction: column;
+		flex-wrap: nowrap;
+		gap: 45px;
+
+		.info {
+			gap: 40px;
+			padding: 0;
+		}
+	}
+}
+
+@media (max-width: 470px) {
+	.container {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		height: auto;
+
+		.titles {
+			display: none;
+		}
+
+		.info {
+			flex-direction: row;
+			justify-content: center;
+			width: 100%;
+
+			.subTitle {
+				display: none;
+			}
+
+			p {
+				display: none;
+			}
+
+			span {
+				display: flex;
+				flex-direction: column;
+
+				p {
+					display: unset;
+				}
+			}
+		}
+	}
+
+	.containerFooter {
+		padding-top: 25px;
+		justify-content: space-around;
+		align-items: baseline;
+		padding-left: 0px;
+
+		height: 150px;
+
+		.btnGoUp {
+			display: none;
+		}
+	}
+}

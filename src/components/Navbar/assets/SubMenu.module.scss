@@ -1,0 +1,39 @@
+@import '../../../styles/colors.scss';
+
+.subMenu_container {
+	padding-bottom: 20px;
+	background-color: $background-first;
+
+	li {
+		font-family: 'Next Art light' !important;
+		font-size: 13px;
+		font-weight: 0;
+
+		span {
+			span {
+				font-family: 'Next Art semibold' !important;
+			}
+		}
+		p {
+			font-family: 'Maven Pro';
+			margin-top: 5px;
+			font-size: 9px !important;
+			color: $font-grey;
+		}
+	}
+}
+
+.newModel {
+	span {
+		b {
+			font-family: 'Next Art semibold' !important;
+		}
+		span {
+			font-size: 8px;
+			position: relative;
+			bottom: 6px;
+			left: 5px;
+			color: red;
+		}
+	}
+}
